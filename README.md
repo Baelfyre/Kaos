@@ -94,4 +94,6 @@ The v1.12.0 integration candidate was Squash-merged through [PR #990](https://gi
 
 ## v1.12.0 release review (not yet published)
 
+For general public project support, use [GitHub Discussions](https://github.com/Baelfyre/Kaos/discussions). Do not post private records, passwords, or tokens in public discussions. The [release-rights applicability summary](docs/releases/v1.12.0-kaos-release-clearance-addendum-20261115.md) distinguishes settled AI-assisted asset provenance and third-party reference acknowledgments from actual unresolved release gates; it does not claim exclusive rights or publication approval.
+
 The upcoming public product name is **Kontrolled Kaos** at [Baelfyre/Kaos](https://github.com/Baelfyre/Kaos). The [current release clearance addendum](docs/releases/v1.12.0-kaos-release-clearance-addendum-20261115.md) records the version-specific privacy, licensing, host validation, and remaining human approval boundaries. The [privacy notice](docs/legal/V1_12_0_PLUGIN_PRIVACY_DISCLOSURE_DRAFT.md) and [use terms](docs/legal/V1_12_0_PLUGIN_TERMS_DRAFT.md) are **review drafts**, not approved or published policies. The latest public GitHub Release remains v1.11.0.
