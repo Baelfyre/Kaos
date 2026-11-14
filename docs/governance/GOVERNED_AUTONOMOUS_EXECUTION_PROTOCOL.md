@@ -24,6 +24,10 @@ Before each transition, resolve and re-read:
 
 Missing or stale required input is not approval.
 
+### Proposed proportional PRAI applicability (not active)
+
+The separately reviewed proposal in [PRAI Proportional Applicability](PRAI_PROPORTIONAL_APPLICABILITY_20261115.md) classifies optional low-risk PRAI checks as `SKIP`, `ADVISORY`, or `REQUIRED`. Until independently adopted, it does not alter this protocol's active gates. An unknown effective PRAI requirement or a protected action remains `REQUIRED`; optional advisory failure never substitutes for a mandatory PRAI PASS or other required evidence. The originating blocked release candidate cannot activate this amendment for itself.
+
 ## Evaluation order
 
 ```text
