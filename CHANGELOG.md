@@ -1,5 +1,10 @@
 > v1.12.0 code integration through PR #990 and the evidence-first governance amendment through PR #996 are merged and verified; release-specific rights/privacy/retention/authority clearance remains open. v1.11.0 remains the latest published release. See the [candidate record](docs/releases/v1.12.0-release-candidate.md) and [applicability dossier](docs/releases/v1.12.0-release-clearance-evidence.md).
 
+## Unreleased proposed proportional PRAI applicability (owner-directed, not active)
+
+- Prepare an isolated, conservative `SKIP / ADVISORY / REQUIRED` PRAI applicability classifier for bounded low-risk autonomous tasks, with fail-closed coverage for unknown policy, protected source changes, phases, actions, and material risks.
+- Add focused negative tests and a protected governance proposal without modifying the PRAI validator, existing AQ6/AQ8 requirements, release gates, or the blocked v1.12.0 candidate. Activation requires separate adoption and independent review.
+
 ## Unreleased UIX9 frozen/current guidance identity verification repair
 
 - Separate V1 frozen guidance and evaluator/validator identity checks from the current V2 guidance-manifest digest, retaining both fail-closed validations instead of comparing unrelated epochs.

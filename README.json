@@ -3135,6 +3135,10 @@
     "prai_contract": "machine/adaptive/prai-post-run-assurance.v1.json",
     "prai_schema": "machine/schemas/prai-post-run-assurance.v1.schema.json",
     "prai_validator": "scripts/validation/validate_prai.py",
+    "prai_applicability_proposal": "docs/governance/PRAI_PROPORTIONAL_APPLICABILITY_20261115.md",
+    "prai_applicability_preview": "orchestra_runtime/domain/adaptive/prai_applicability.py",
+    "prai_applicability_preview_tests": "tests/runtime/test_prai_applicability.py",
+    "prai_applicability_preview_status": "PROPOSED_NOT_ACTIVE_TRUSTED_POLICY_BINDING_PENDING",
     "prai_workflow_dispatch_baseline": "PRAI workflow_dispatch requires the explicit approved_base_sha input bound to ORCHESTRA_APPROVED_BASE_SHA; pull_request comparison identity remains event-derived.",
     "issue_937_f1_governance_receipt_tests": "tests/runtime/test_governance_receipt_foundations.py",
     "issue_937_f2_evidence_hierarchy_tests": "tests/runtime/test_evidence_gated_decision_hierarchy.py"
