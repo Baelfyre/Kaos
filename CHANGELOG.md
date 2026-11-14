@@ -5,6 +5,11 @@
 - Prepare an isolated, conservative `SKIP / ADVISORY / REQUIRED` PRAI applicability classifier for bounded low-risk autonomous tasks, with fail-closed coverage for unknown policy, protected source changes, phases, actions, and material risks.
 - Add focused negative tests and a protected governance proposal without modifying the PRAI validator, existing AQ6/AQ8 requirements, release gates, or the blocked v1.12.0 candidate. Activation requires separate adoption and independent review.
 
+## Unreleased UIX9 frozen/current guidance identity verification repair
+
+- Separate V1 frozen guidance and evaluator/validator identity checks from the current V2 guidance-manifest digest, retaining both fail-closed validations instead of comparing unrelated epochs.
+- Preserve the historical V1 guided-arm digest in the V2 runner, with targeted regression tests. No live model/provider calls, new execution authority, changes to experimental evidence, or release permission are introduced.
+
 ## Unreleased Governor AI-output warning boundary
 
 - Add isolated static UIX-9 candidate evidence while retaining frozen V1 identities and existing live execution gates.
