@@ -1,14 +1,23 @@
 > v1.12.0 code integration through PR #990 and the evidence-first governance amendment through PR #996 are merged and verified; release-specific rights/privacy/retention/authority clearance remains open. v1.11.0 remains the latest published release. See the [candidate record](docs/releases/v1.12.0-release-candidate.md) and [applicability dossier](docs/releases/v1.12.0-release-clearance-evidence.md).
 
+## Unreleased Kontrolled Kaos product identity transition
+
+- Prepare the approved public identity migration from Orchestra to Kontrolled Kaos across product metadata, host registrations, installation guidance, and brand asset references. Preserve the existing specialists, Conductor routing, governance, runtime behavior, version 1.12.0, historical Orchestra evidence, and all release and publication gates.
+
 ## Unreleased Kontrolled Kaos v1.12.0 disclosure alignment
 
 - Update version-specific draft privacy and use notices to the approved Kontrolled Kaos product and Baelfyre/Kaos repository identity while retaining local compatibility paths and existing disclosed limitations.
-- Preserve historical Orchestra rights evidence, and add a current-release cross-reference with host-smoke findings and unresolved Governor, Arbiter, rights and publication gates. No legal or release approval is implied.
+- Preserve historical Orchestra rights evidence, and add a current-release cross-reference with host-smoke findings and unresolved Governor, Arbiter, rights and publication gates. Remove optional Codex privacy/terms links pointing to GitHub policies rather than misrepresenting them as project disclosures. No legal or release approval is implied.
 
 ## Unreleased UIX9 frozen/current guidance identity verification repair
 
 - Separate V1 frozen guidance and evaluator/validator identity checks from the current V2 guidance-manifest digest, retaining both fail-closed validations instead of comparing unrelated epochs.
 - Preserve the historical V1 guided-arm digest in the V2 runner, with targeted regression tests. No live model/provider calls, new execution authority, changes to experimental evidence, or release permission are introduced.
+
+## Unreleased UIX-9 V1 and candidate V2 identity verification
+
+- Preserve pinned historical UIX-9 V1 guidance, evaluator and validator digest checks separately from the current candidate V2 manifest, with additional fail-closed regressions and campaign evidence-root/model-observation checks in `scripts/uix9b_live_proof_runner_v2.py` and `tests/runtime/test_uix9_live_proof_protocol.py`.
+- This candidate performs no live provider calls and grants no merge or release authority. The earlier campaign-scoped V2 authorization remains unchanged; see `docs/validation/UIX_9C_V2_AUTHORITY_RECONCILIATION_20261114.md` for the preparation/approval distinction.
 
 ## Unreleased Governor AI-output warning boundary
 
