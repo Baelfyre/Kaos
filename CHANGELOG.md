@@ -1,5 +1,10 @@
 > v1.12.0 code integration through PR #990 and the evidence-first governance amendment through PR #996 are merged and verified; release-specific rights/privacy/retention/authority clearance remains open. v1.11.0 remains the latest published release. See the [candidate record](docs/releases/v1.12.0-release-candidate.md) and [applicability dossier](docs/releases/v1.12.0-release-clearance-evidence.md).
 
+## Unreleased Kontrolled Kaos v1.12.0 disclosure alignment
+
+- Update version-specific draft privacy and use notices to the approved Kontrolled Kaos product and Baelfyre/Kaos repository identity while retaining local compatibility paths and existing disclosed limitations.
+- Preserve historical Orchestra rights evidence, and add a current-release cross-reference with host-smoke findings and unresolved Governor, Arbiter, rights and publication gates. No legal or release approval is implied.
+
 ## Unreleased UIX9 frozen/current guidance identity verification repair
 
 - Separate V1 frozen guidance and evaluator/validator identity checks from the current V2 guidance-manifest digest, retaining both fail-closed validations instead of comparing unrelated epochs.
