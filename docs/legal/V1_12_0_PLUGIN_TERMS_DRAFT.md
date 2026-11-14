@@ -34,10 +34,10 @@ The plugin does not have a Kontrolled Kaos-operated backend in the approved v1.1
 
 ## Changes and support
 
-Plugin updates require the applicable repository/host installation or refresh process; the project does not silently update an installed host merely by changing repository metadata. The project homepage and public issue tracker are [Baelfyre/Kaos](https://github.com/Baelfyre/Kaos). **No private-data support mailbox or legally sufficient individual notice contact has been verified in this draft.** Never post credentials or personal data to a public issue.
+Plugin updates require the applicable repository/host installation or refresh process; the project does not silently update an installed host merely by changing repository metadata. The project homepage and issue tracker are [Baelfyre/Kaos](https://github.com/Baelfyre/Kaos). The owner selected [GitHub Discussions](https://github.com/Baelfyre/Kaos/discussions) for general public project support, not a private data-submission channel. Do not post credentials, private records, or personal data publicly. No separate owner-operated private support intake or dedicated mailbox is included in this source-only release.
 
 ## Open review items
 
-Governor and owner review must still confirm: appropriate contact/disclosure channel; jurisdiction and local consumer/data protection implications; brand/name collision screening; any actual third-party redistributed software or assets; and whether any project-specific terms beyond the root MIT License are necessary for the confirmed plugin distribution channels.
+The public support-channel decision is settled for this source-only release. The root MIT License is the existing redistribution license; this draft does not create a paid service agreement or new mandatory subscription terms. Governor must determine any specific applicable operator-processing disclosure, jurisdictional duty, material name/asset conflict, or redistribution notice. These questions must be grounded in an actual obligation or concrete evidence, not a presumed requirement for copyright registration, a paid legal certificate, or a private mailbox when no private support intake exists.
 
 **Release decision: NOT APPROVED / DRAFT ONLY.**

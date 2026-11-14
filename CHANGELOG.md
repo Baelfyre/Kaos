@@ -6,6 +6,8 @@
 
 ## Unreleased Kontrolled Kaos v1.12.0 disclosure alignment
 
+- Reconcile the already-merged proportional Governor IP guidance with v1.12.0 documentation: no unsupported copyright certificate requirement, preserve AI-assisted provenance and Unslop author/license/change notices, and confirm GitHub Discussions as public support only. The single-use PRAI exception, source identity, and release-governance authority are unchanged.
+
 - Update version-specific draft privacy and use notices to the approved Kontrolled Kaos product and Baelfyre/Kaos repository identity while retaining local compatibility paths and existing disclosed limitations.
 - Preserve historical Orchestra rights evidence, and add a current-release cross-reference with host-smoke findings and unresolved Governor, Arbiter, rights and publication gates. Remove optional Codex privacy/terms links pointing to GitHub policies rather than misrepresenting them as project disclosures. No legal or release approval is implied.
 
