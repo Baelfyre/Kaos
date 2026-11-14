@@ -4,6 +4,11 @@
 
 - Prepare the approved public identity migration from Orchestra to Kontrolled Kaos across product metadata, host registrations, installation guidance, and brand asset references. Preserve the existing specialists, Conductor routing, governance, runtime behavior, version 1.12.0, historical Orchestra evidence, and all release and publication gates.
 
+## Unreleased Kontrolled Kaos v1.12.0 disclosure alignment
+
+- Update version-specific draft privacy and use notices to the approved Kontrolled Kaos product and Baelfyre/Kaos repository identity while retaining local compatibility paths and existing disclosed limitations.
+- Preserve historical Orchestra rights evidence, and add a current-release cross-reference with host-smoke findings and unresolved Governor, Arbiter, rights and publication gates. Remove optional Codex privacy/terms links pointing to GitHub policies rather than misrepresenting them as project disclosures. No legal or release approval is implied.
+
 ## Unreleased UIX9 frozen/current guidance identity verification repair
 
 - Separate V1 frozen guidance and evaluator/validator identity checks from the current V2 guidance-manifest digest, retaining both fail-closed validations instead of comparing unrelated epochs.

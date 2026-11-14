@@ -28,8 +28,6 @@
       "Write"
     ],
     "websiteURL": "https://github.com/Baelfyre/Kaos",
-    "privacyPolicyURL": "https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement",
-    "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
     "defaultPrompt": [
       "Use Kontrolled Kaos to route this software task through the existing Conductor and specialist skills."
     ],
