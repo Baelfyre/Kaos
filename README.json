@@ -811,6 +811,7 @@
       "validation_surface": "tests/runtime/test_uix9_live_metric_evaluator_v2.py",
       "evaluator": "scripts/uix9_live_metric_evaluator_v2.py",
       "runner": "scripts/uix9b_live_proof_runner_v2.py",
+      "guidance_binding_rule": "Verify frozen historical V1 guidance against frozen V1 identity; verify current V2 guidance against its own current-manifest digest. Never substitute current candidate guidance for frozen experiment guidance.",
       "adjudicator": "scripts/uix9b_live_proof_adjudicator_v2.py",
       "terminal": "UIX_9B_V2_CANONICAL_FULL_VALIDATION_PASS_CANONICAL_POST_MERGE_VERIFIED",
       "live_model_calls": 0,

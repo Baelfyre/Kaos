@@ -4,10 +4,15 @@
 
 - Prepare the approved public identity migration from Orchestra to Kontrolled Kaos across product metadata, host registrations, installation guidance, and brand asset references. Preserve the existing specialists, Conductor routing, governance, runtime behavior, version 1.12.0, historical Orchestra evidence, and all release and publication gates.
 
+## Unreleased UIX9 frozen/current guidance identity verification repair
+
+- Separate V1 frozen guidance and evaluator/validator identity checks from the current V2 guidance-manifest digest, retaining both fail-closed validations instead of comparing unrelated epochs.
+- Preserve the historical V1 guided-arm digest in the V2 runner, with targeted regression tests. No live model/provider calls, new execution authority, changes to experimental evidence, or release permission are introduced.
+
 ## Unreleased UIX-9 V1 and candidate V2 identity verification
 
-- Separate pinned historical UIX-9 V1 guidance, evaluator, and validator digest checks from static candidate V2 guidance manifest digest verification in `scripts/uix9b_live_proof_runner_v2.py`.
-- Add fail-closed regression tests in `tests/runtime/test_uix9_live_proof_protocol.py` for V1/V2 identity separation and mismatch errors. This PR performs no live provider calls and grants no merge or release authority. The earlier campaign-scoped V2 authorization is unchanged; see `docs/validation/UIX_9C_V2_AUTHORITY_RECONCILIATION_20261114.md` for the preparation/approval distinction.
+- Preserve pinned historical UIX-9 V1 guidance, evaluator and validator digest checks separately from the current candidate V2 manifest, with additional fail-closed regressions and campaign evidence-root/model-observation checks in `scripts/uix9b_live_proof_runner_v2.py` and `tests/runtime/test_uix9_live_proof_protocol.py`.
+- This candidate performs no live provider calls and grants no merge or release authority. The earlier campaign-scoped V2 authorization remains unchanged; see `docs/validation/UIX_9C_V2_AUTHORITY_RECONCILIATION_20261114.md` for the preparation/approval distinction.
 
 ## Unreleased Governor AI-output warning boundary
 
