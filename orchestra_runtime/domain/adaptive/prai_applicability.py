@@ -25,15 +25,31 @@ REQUIRED_RISKS = frozenset(DEEP_RISK_CHARACTERISTICS).union(
 )
 PROTECTED_PATH_PREFIXES = (
     ".github/workflows/",
+    ".antigravity-plugin/",
+    ".claude-plugin/",
+    ".codex-plugin/",
+    "adapters/",
     "docs/architecture/",
     "docs/governance/",
     "docs/releases/",
     "machine/",
+    "orchestra_runtime/domain/adaptive/",
     "scripts/validation/",
-    "orchestra_runtime/domain/adaptive/prai",
+    "scripts/validate_",
 )
 PROTECTED_PATH_EXACT = frozenset(
-    {"AGENTS.md", "plugin.json", "PROJECT_STATE.md", "PROJECT_CONTEXT.md"}
+    {
+        "agents.md",
+        "plugin.json",
+        "project_state.md",
+        "project_context.md",
+        "security.md",
+        "routing_map.md",
+        "scripts/governance_check.py",
+        "scripts/dagger_guardrail.py",
+        "scripts/runtime_guardrail.py",
+        "scripts/evidence_identity.py",
+    }
 )
 
 
@@ -41,8 +57,11 @@ PROTECTED_PATH_EXACT = frozenset(
 class PraiApplicabilityDecision:
     disposition: str
     reasons: tuple[str, ...]
-    may_continue_without_prai: bool
-    authority_granted: bool = False
+
+    @property
+    def authority_granted(self) -> bool:
+        """A routing hint never grants authority, even when it recommends SKIP."""
+        return False
 
 
 def evaluate_prai_applicability(
@@ -72,6 +91,7 @@ def evaluate_prai_applicability(
         or not path
         or path.startswith(("/", "\\"))
         or "\\" in path
+        or ":" in path
         or any(part in ("", ".", "..") for part in path.split("/"))
         for path in changed_paths
     )
@@ -89,20 +109,21 @@ def evaluate_prai_applicability(
         or unknown_risks
     )
     if invalid_classification or existing_prai_gate == "UNKNOWN":
-        return PraiApplicabilityDecision("REQUIRED", ("UNKNOWN_OR_UNVERIFIED_POLICY_OR_RISK",), False)
+        return PraiApplicabilityDecision("REQUIRED", ("UNKNOWN_OR_UNVERIFIED_POLICY_OR_RISK",))
     if existing_prai_gate == "MANDATORY":
-        return PraiApplicabilityDecision("REQUIRED", ("EXISTING_MANDATORY_GATE",), False)
+        return PraiApplicabilityDecision("REQUIRED", ("EXISTING_MANDATORY_GATE",))
     if action != "TASK" or phase != "GENERAL":
-        return PraiApplicabilityDecision("REQUIRED", ("PROTECTED_ACTION_OR_PHASE",), False)
+        return PraiApplicabilityDecision("REQUIRED", ("PROTECTED_ACTION_OR_PHASE",))
     if logical_impact in ("HIGH", "CRITICAL") or security_impact in ("MEDIUM", "HIGH", "CRITICAL"):
-        return PraiApplicabilityDecision("REQUIRED", ("MATERIAL_LOGICAL_OR_SECURITY_IMPACT",), False)
+        return PraiApplicabilityDecision("REQUIRED", ("MATERIAL_LOGICAL_OR_SECURITY_IMPACT",))
     if REQUIRED_RISKS.intersection(risk_characteristics):
-        return PraiApplicabilityDecision("REQUIRED", ("PROTECTED_RISK_CHARACTERISTIC",), False)
+        return PraiApplicabilityDecision("REQUIRED", ("PROTECTED_RISK_CHARACTERISTIC",))
     if any(
-        path in PROTECTED_PATH_EXACT or path.startswith(PROTECTED_PATH_PREFIXES)
+        path.casefold() in PROTECTED_PATH_EXACT
+        or path.casefold().startswith(PROTECTED_PATH_PREFIXES)
         for path in changed_paths
     ):
-        return PraiApplicabilityDecision("REQUIRED", ("PROTECTED_SOURCE_PATH",), False)
+        return PraiApplicabilityDecision("REQUIRED", ("PROTECTED_SOURCE_PATH",))
 
     harmless_reference_docs = (
         logical_impact in ("NONE", "LOW")
@@ -111,5 +132,5 @@ def evaluate_prai_applicability(
         and all(path.startswith("docs/reference/") and path.endswith(".md") for path in changed_paths)
     )
     if harmless_reference_docs:
-        return PraiApplicabilityDecision("SKIP", ("HARMLESS_REFERENCE_DOCUMENTATION",), True)
-    return PraiApplicabilityDecision("ADVISORY", ("BOUNDED_NONPROTECTED_WORK",), True)
+        return PraiApplicabilityDecision("SKIP", ("HARMLESS_REFERENCE_DOCUMENTATION",))
+    return PraiApplicabilityDecision("ADVISORY", ("BOUNDED_NONPROTECTED_WORK",))

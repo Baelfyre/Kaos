@@ -8,7 +8,7 @@
 
 This proposal introduces a conservative **pre-PRAI routing decision**. It does not change the independent PRAI validator, qualified-receipt criteria, required CI, security tests, Arbiter authority, or protected merge/release approvals. A routing decision cannot convert PRAI BLOCKED into PRAI PASS or grant authority.
 
-The separate, deterministic prototype lives in `orchestra_runtime/domain/adaptive/prai_applicability.py`; its cases live in `tests/runtime/test_prai_applicability.py`. It requires upstream Conductor to read the *effective* policy and explicitly classify the existing PRAI gate. No speculative default to OPTIONAL is permitted.
+The separate, deterministic prototype lives in `orchestra_runtime/domain/adaptive/prai_applicability.py`; its cases live in `tests/runtime/test_prai_applicability.py`. It requires upstream Conductor to read the *effective* policy and explicitly classify the existing PRAI gate. No speculative default to OPTIONAL is permitted. Its return value is a **non-authorizing routing hint**, with no continuation-permission field. Before any host/runtime integration, a separate trusted verifier must bind the policy, current HEAD/tree and complete Git changed-path inventory. Raw caller-supplied `OPTIONAL`, impact, phase or path declarations must not independently establish permission to omit mandatory PRAI.
 
 ## Routing outcomes
 

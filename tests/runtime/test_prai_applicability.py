@@ -26,7 +26,6 @@ def test_harmless_reference_documentation_can_skip():
     result = classify()
     assert result.disposition == "SKIP"
     assert result.reasons == ("HARMLESS_REFERENCE_DOCUMENTATION",)
-    assert result.may_continue_without_prai
     assert not result.authority_granted
 
 
@@ -51,6 +50,19 @@ def test_reference_documentation_only_is_allowed_to_skip(changes):
         ("AGENTS.md",),
         (".github/workflows/prai.yml",),
         ("PROJECT_STATE.md",),
+        ("SECURITY.md",),
+        ("ROUTING_MAP.md",),
+        ("scripts/governance_check.py",),
+        ("scripts/dagger_guardrail.py",),
+        ("scripts/validate_governance_protocol_consistency.py",),
+        ("orchestra_runtime/domain/adaptive/gate_coverage.py",),
+        ("orchestra_runtime/domain/adaptive/high_risk_assurance.py",),
+        (".claude-plugin/plugin.json",),
+        (".codex-plugin/plugin.json",),
+        (".antigravity-plugin/plugin.json",),
+        ("adapters/codex/README.md",),
+        ("DOCS/GOVERNANCE/PROTECTED_GOVERNANCE_ESCALATION_PROTOCOL.md",),
+        ("SECURITY.MD",),
     ],
 )
 def test_protected_source_always_requires_prai(changes):
@@ -71,7 +83,6 @@ def test_protected_actions_must_not_skip(action):
 def test_active_or_unknown_mandatory_requirement_fails_closed(gate):
     result = classify(existing_prai_gate=gate)
     assert result.disposition == "REQUIRED"
-    assert not result.may_continue_without_prai
 
 
 @pytest.mark.parametrize(
@@ -113,6 +124,8 @@ def test_high_or_unknown_logical_impact_is_required(impact):
         ("docs/reference/../governance/x.md",),
         (r"docs\\reference\\x.md",),
         ("docs/reference/x.md", "machine/policy.json"),
+        ("C:docs/reference/x.md",),
+        ("docs/reference/file:name.md",),
     ],
 )
 def test_ambiguous_path_or_mixed_protected_paths_never_skip(changes):
@@ -121,13 +134,12 @@ def test_ambiguous_path_or_mixed_protected_paths_never_skip(changes):
 
 def test_bounded_code_work_is_advisory_not_mandatory_by_default():
     result = classify(
-        changed_paths=("orchestra_runtime/domain/adaptive/task_profile.py",),
+        changed_paths=("tests/runtime/test_task_profile.py",),
         logical_impact="MEDIUM",
         security_impact="LOW",
         risk_characteristics=("UI",),
     )
     assert result.disposition == "ADVISORY"
-    assert result.may_continue_without_prai
     assert not result.authority_granted
 
 
