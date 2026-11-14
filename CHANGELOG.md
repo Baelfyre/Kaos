@@ -1,5 +1,10 @@
 > v1.12.0 code integration through PR #990 and the evidence-first governance amendment through PR #996 are merged and verified; release-specific rights/privacy/retention/authority clearance remains open. v1.11.0 remains the latest published release. See the [candidate record](docs/releases/v1.12.0-release-candidate.md) and [applicability dossier](docs/releases/v1.12.0-release-clearance-evidence.md).
 
+## Unreleased UIX9 frozen/current guidance identity verification repair
+
+- Separate V1 frozen guidance and evaluator/validator identity checks from the current V2 guidance-manifest digest, retaining both fail-closed validations instead of comparing unrelated epochs.
+- Preserve the historical V1 guided-arm digest in the V2 runner, with targeted regression tests. No live model/provider calls, new execution authority, changes to experimental evidence, or release permission are introduced.
+
 ## Unreleased Governor AI-output warning boundary
 
 - Add isolated static UIX-9 candidate evidence while retaining frozen V1 identities and existing live execution gates.
