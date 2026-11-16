@@ -1,8 +1,14 @@
-# Orchestra Project Maturity
+# Kontrolled Kaos Project Maturity
 
-This document classifies Orchestra's published v1.11.0 surfaces and preserved historical qualification evidence. It distinguishes implemented deterministic controls from bounded/advisory capabilities and from planned work so compatibility or test success is not mistaken for authority or production maturity.
+This document distinguishes published release contents from bounded, experimental, or deferred capabilities. Historical qualifications remain tied to their original source and review dates.
 
-## Current v1.11.0 publication
+## Current v1.12.0 publication
+
+- **Release identity:** Kontrolled Kaos v1.12.0 was published on November 14, 2026, at commit `e3a50245313dd3a80f1d4e25c5ead4ab429cd074`. See the [v1.12.0 overview](reference/releases/v1.12.0.md) and [GitHub Release](https://github.com/Baelfyre/Kaos/releases/tag/v1.12.0).
+- **Included changes:** product branding and host entry points, proportional governance and evidence hardening, Scribe/Cloak/Cipher/Dagger guidance, offline adaptive capability contracts, MCP source-identity metadata, and synthetic JEV pilot infrastructure.
+- **Maturity limits:** publication does not qualify live TypeSafe/JEV calls, general BYOK onboarding, trusted host discovery, automatic learned routing, effectful Cipher inference, or unsupported host adapters. Release packaging is not new execution authority.
+
+## Prior v1.11.0 publication
 
 - **Adaptive Assurance**: AQ1 through AQ14 are included in the published v1.11.0 line with evidence-only/non-authorizing semantics preserved.
 - **PRAI and Covenant**: post-run assurance and cross-governance synthesis are included without creating transition or protected-policy authority.
@@ -20,7 +26,7 @@ This document classifies Orchestra's published v1.11.0 surfaces and preserved hi
 - **Publication identity**: tag `v1.10.0` and GitHub Release `383668751` resolve to signed canonical commit `756a358f96363f0c377b049adcd87b1991d5aef6`, tree `42c0c8929c4dcfa5b17ff2feb293710d2468ca51`.
 - **Publication boundary**: the release is `PUBLISHED_VERIFIED`; no deployment, policy activation, or installed-integration refresh is included. Post-publication documentation normalization does not change machine authority.
 
-## Current v1.9.0 publication
+## Prior v1.9.0 publication
 
 - **UIEF-5 through UIEF-10**: UIEF-5 is canonically merged and verified. UIEF-6 and UIEF-8 are verified from existing specialist and regression contracts. UIEF-7 is verified with deterministic static validation and no new rendered-application evidence. UIEF-9 is verified with the historical `NO_BENEFIT_ESTABLISHED` disposition and no new provider experiment. UIEF-10 documentation and release closeout are canonically verified.
 - **Package and host metadata**: all 11 package/version surfaces and the host update contract are published at `1.9.0`; host maturity and installed integrations are unchanged.

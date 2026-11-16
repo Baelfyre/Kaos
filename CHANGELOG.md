@@ -1,4 +1,10 @@
-> v1.12.0 code integration through PR #990 and the evidence-first governance amendment through PR #996 are merged and verified; release-specific rights/privacy/retention/authority clearance remains open. v1.11.0 remains the latest published release. See the [candidate record](docs/releases/v1.12.0-release-candidate.md) and [applicability dossier](docs/releases/v1.12.0-release-clearance-evidence.md).
+## v1.12.0 Kontrolled Kaos (published November 14, 2026)
+
+Kontrolled Kaos v1.12.0 is published as a GitHub source/plugin release at commit `e3a50245313dd3a80f1d4e25c5ead4ab429cd074`. Key changes include product identity and host entry points, evidence-first governance refinements, Scribe/Cloak/Cipher/Dagger documentation, offline adaptive capability foundations, bounded MCP identity metadata, JEV offline pilot artifacts, and release-specific privacy/attribution disclosures. **Publication does not activate or qualify experimental host, provider, or inference components.**
+
+See the [v1.12.0 published overview](docs/reference/releases/v1.12.0.md), [GitHub Release](https://github.com/Baelfyre/Kaos/releases/tag/v1.12.0), and [comparison with v1.11.0](https://github.com/Baelfyre/Kaos/compare/v1.11.0...v1.12.0).
+
+The detailed entries below retain their original development-time **Unreleased** headings as a chronological record of how work was prepared. They are not statements that the published v1.12.0 tag is still pending. Historical candidate and clearance documents likewise retain their contemporaneous status and exact-source evidence.
 
 ## Unreleased Kontrolled Kaos product identity transition
 

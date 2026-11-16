@@ -57,4 +57,6 @@ def test_uai_closeout_projection_parity_is_current_without_release_claim() -> No
     assert index is not None
     assert index["parity_status"] == "PASS"
     assert all(item["parity"] == "PASS" for item in index["projections"])
-    assert _load("README.json")["release_state"]["current_public_release"] == "v1.11.0"
+    readme = _load("README.json")
+    assert readme["release_state"]["current_public_release"] == readme["repository"]["current_public_release"]
+    assert readme["release_state"]["published_reference_v1_12_0"] == "docs/reference/releases/v1.12.0.md"
