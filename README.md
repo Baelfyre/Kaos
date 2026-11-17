@@ -5,6 +5,16 @@
   <p><a href="https://github.com/Baelfyre/Kaos/releases/tag/v1.12.0"><img src="https://img.shields.io/badge/published-v1.12.0-blue" alt="Published release v1.12.0" /></a> <a href="https://github.com/Baelfyre/Kaos/actions/workflows/validate.yml"><img src="https://github.com/Baelfyre/Kaos/actions/workflows/validate.yml/badge.svg" alt="Validation status" /></a> <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license" /></p>
 </div>
 
+## From Orchestra to Kontrolled Kaos
+
+Formerly known as **Orchestra**, the project was rebranded as **Kontrolled Kaos** to establish a more distinctive identity and address potential naming confusion.
+
+The name reflects the project's philosophy: bringing order to the complexity of AI-assisted software development through specialized agents, structured coordination, validation, and human oversight.
+
+**The identity changed, but the foundation remains the same.** The existing specialists, orchestration, architecture, and governance principles are preserved.
+
+[Read the rebranding decision](docs/project/KAOS_REBRAND_DECISION.md).
+
 ## What is Kontrolled Kaos?
 
 Kontrolled Kaos coordinates AI-assisted development across specialists for architecture, implementation, UI/UX, data, security, testing, documentation, and governance. It routes the task, preserves evidence, validates results, and respects human authority.
