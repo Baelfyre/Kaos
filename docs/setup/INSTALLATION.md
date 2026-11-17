@@ -4,11 +4,9 @@ Kontrolled Kaos, the AI-Assisted Development Framework, can be installed through
 
 ## Release Status
 
-The current public GitHub Release remains the historical Orchestra release `v1.11.0: Adaptive Assurance and Governance Hardening`, published from lightweight tag `v1.11.0` at exact GitHub-verified signed release commit `72c2884a66bb0e0d0ff1e070e7cc1feccd968e35` with tree `e4072cff4de83efa1c1d2d495aa5c186a2469db4`. The release is non-draft, non-prerelease, immutable, and independently verified. This rebrand does not bump the version or publish a release.
+The latest published GitHub source/plugin release is [Kontrolled Kaos v1.12.0](https://github.com/Baelfyre/Kaos/releases/tag/v1.12.0), at exact commit `e3a50245313dd3a80f1d4e25c5ead4ab429cd074`. Use the `v1.12.0` tag for reproducible published source. For the changes and qualification limits, see the [v1.12.0 release overview](../reference/releases/v1.12.0.md) and [host compatibility](COMPATIBILITY.md). The prior [Orchestra v1.11.0](../reference/releases/v1.11.0.md) remains available for historical installs.
 
-The `v1.11.0` tag is a lightweight `commit` ref resolving directly to the release commit; there is no separate tag object. All canonical package/version surfaces are normalized to `1.11.0`. Use tag `v1.11.0` when exact currently published content is required.
-
-The v1.11.0 published reference and preserved candidate/readiness evidence are linked from `docs/reference/releases/v1.11.0.md`. Provider/model identity for Copilot Auto mode remains unresolved and unadmitted.
+Packaging and version parity do not imply live activation on every host. In particular, Claude Code source packaging was validated, but interactive operation was not independently verified in the release evidence.
 
 | Host | Install Surface | Current Status |
 |---|---|---|

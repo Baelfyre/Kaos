@@ -23,7 +23,7 @@ Use this reference layer to choose a starting point. Follow the linked source do
 
 ## Current release
 
-The current public release is [Orchestra v1.11.0](releases/v1.11.0.md). Its exact publication identity is lightweight tag `v1.11.0` at commit `72c2884a66bb0e0d0ff1e070e7cc1feccd968e35` with tree `e4072cff4de83efa1c1d2d495aa5c186a2469db4` and immutable GitHub Release `387061978`.
+The latest public release is [Kontrolled Kaos v1.12.0](releases/v1.12.0.md), published November 14, 2026, at commit `e3a50245313dd3a80f1d4e25c5ead4ab429cd074`. The prior [Orchestra v1.11.0](releases/v1.11.0.md) documentation remains available as historical release evidence.
 
 ## Existing detailed maps
 

@@ -168,9 +168,9 @@ Murmurs changes presentation only. It does not alter authority, governance, vali
 - `../machine/release-evidence/`: structured release evidence.
 - [Decision Log](../DECISION_LOG.md): architectural and governance decisions.
 
-The current public release is immutable `v1.11.0`, tagged at canonical commit `72c2884a66bb0e0d0ff1e070e7cc1feccd968e35` with tree `e4072cff4de83efa1c1d2d495aa5c186a2469db4` and GitHub Release `387061978`. Its exact-head qualification, signed identical-tree materialization, canonical promotion, tag, release identity, and post-merge validation were independently verified.
+The current published source/plugin release is [Kontrolled Kaos v1.12.0](reference/releases/v1.12.0.md), tagged at commit `e3a50245313dd3a80f1d4e25c5ead4ab429cd074` with [GitHub Release 445645994](https://github.com/Baelfyre/Kaos/releases/tag/v1.12.0). The release overview distinguishes published source changes from unqualified or deferred capabilities.
 
-The published [v1.11.0 human reference](reference/releases/v1.11.0.md) is separate from the preserved [v1.11.0 candidate qualification record](releases/v1.11.0-adaptive-assurance-governance-release-candidate.md) and [release-readiness evidence](validation/V1_11_0_RELEASE_READINESS_EVIDENCE.md). Candidate/readiness evidence remains revision-bound historical evidence. The prior [v1.10.0 published reference](reference/releases/v1.10.0.md) remains immutable historical release documentation.
+The [v1.12.0 preparation record](releases/v1.12.0-release-candidate.md) and [release-readiness evidence](validation/V1_12_0_RELEASE_READINESS_EVIDENCE.md) are preserved as historical snapshots. The prior [v1.11.0 published reference](reference/releases/v1.11.0.md), [qualification record](releases/v1.11.0-adaptive-assurance-governance-release-candidate.md), and [readiness evidence](validation/V1_11_0_RELEASE_READINESS_EVIDENCE.md) remain accessible. The older [v1.10.0 published reference](reference/releases/v1.10.0.md) is also preserved.
 
 ## Developer extension path
 
