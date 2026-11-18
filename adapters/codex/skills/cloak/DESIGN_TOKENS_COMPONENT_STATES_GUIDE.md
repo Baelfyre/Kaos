@@ -56,7 +56,7 @@ Not every component needs every state. Missing states are findings only when the
 
 ## Typography, spacing, and density
 
-- Typography tokens should preserve readable hierarchy and line spacing across responsive conditions.
+- Typography tokens should preserve readable hierarchy and line spacing across responsive conditions. Review the reference basis of `rem`, `em`, `%`, `vw`, and `px` against [`RESPONSIVE_CSS_LAYOUT_GUIDE.md`](RESPONSIVE_CSS_LAYOUT_GUIDE.md) before imposing unit-specific token rules.
 - Spacing should communicate grouping and separation consistently rather than act as arbitrary pixel tuning.
 - Dense modes must retain target size, focus visibility, readable labels, and error communication.
 - Localization and longer content must not break the component contract.

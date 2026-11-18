@@ -73,6 +73,14 @@ def main() -> None:
         "Breakpoints and reflow",
         "Fixed, sticky, and overlay UI",
         "Data-heavy surfaces",
+        "CSS sizing units and scaling",
+        "Consistency and anti-slop review",
+        "font-size: 1.5em",
+        "font-size: 1.5rem",
+        "320 CSS px",
+        "200% text resize",
+        "Ponytail",
+        "Overseer",
     )
 
     forms = read(SOURCE / "FORM_FOCUS_VALIDATION_GUIDE.md")

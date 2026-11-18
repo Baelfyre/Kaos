@@ -1,3 +1,7 @@
+## Unreleased: Cloak responsive CSS sizing and consistency guidance
+
+- Clarify when to choose CSS pixels, percentages, viewport units, `em`, `rem`, and Grid `fr` without imposing a universal unit rule. Add root-cause-first responsive containment review, design-token consistency, anti-clipping/overflow guidance, and scoped WCAG reflow/text-resize checks. Cloak remains advisory, Ponytail owns implementation, and Overseer owns readiness validation.
+
 ## v1.12.0 Kontrolled Kaos (published November 14, 2026)
 
 Kontrolled Kaos v1.12.0 is published as a GitHub source/plugin release at commit `e3a50245313dd3a80f1d4e25c5ead4ab429cd074`. Key changes include product identity and host entry points, evidence-first governance refinements, Scribe/Cloak/Cipher/Dagger documentation, offline adaptive capability foundations, bounded MCP identity metadata, JEV offline pilot artifacts, and release-specific privacy/attribution disclosures. **Publication does not activate or qualify experimental host, provider, or inference components.**
