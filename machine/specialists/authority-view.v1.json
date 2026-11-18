@@ -196,7 +196,7 @@
       "slug": "cloak",
       "authority_class": "DOMAIN_UI_UX",
       "source_path": "skills/cloak/SKILL.md",
-      "source_blob_sha": "4b2a0dcda9ef7b20a5e1b87ab70d3809d9fcbd16",
+      "source_blob_sha": "da843c2601970c3d2688e7abf444ea47a26cb9a8",
       "observe_classes": [
         "DESIGN_SOURCES",
         "SCREENSHOTS",
